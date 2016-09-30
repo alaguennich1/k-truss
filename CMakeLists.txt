@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+find_package(gflags REQUIRED)
+add_definitions("-Wall -std=c++11 -I/usr/local/include")
+link_directories(/usr/local/lib)
+add_executable(k-truss k-truss.cc)
+target_link_libraries(k-truss gflags)
